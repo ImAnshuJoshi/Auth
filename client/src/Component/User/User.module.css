@@ -1,0 +1,48 @@
+.detailsContainer{
+    background-color: #1c1c1c;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.details{
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.label{
+    font-size: 1rem;
+}
+.value{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-bottom: 5px;
+}
+.email , .name{
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #303030;
+    color: #fff;
+}
+button{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #367c38;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 5px;
+}
+button:hover {
+    background-color: #388e3c;
+  }
