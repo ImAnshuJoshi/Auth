@@ -9,6 +9,12 @@ function User() {
     const navigate = useNavigate();
 
     useEffect(()=>{
+        if(localStorage.getItem(`user_${id}`)){
+            navigate(`/user/${id}`);
+        }
+        else{
+            navigate(`/`)
+        }
         fetchUser();
     },[])
 
@@ -28,6 +34,7 @@ function User() {
         navigate(`/user/${user._id}/edit` , {state: {user : user}});
     }
     const handleLogOut = async =>{
+        localStorage.removeItem(`user_${id}`);
         navigate('/');
     }
     
