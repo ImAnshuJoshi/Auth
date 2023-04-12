@@ -87,6 +87,7 @@ function Auth() {
       const { status, message, user } = await response.json();
       console.log(status, message);
       if (status === "success") {
+        localStorage.setItem(`user_${user._id}` , user._id);
         navigate(`/user/${user._id}`);
         swal.fire({
           position: "top-end",
