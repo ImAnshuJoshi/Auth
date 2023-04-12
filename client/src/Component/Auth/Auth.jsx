@@ -150,7 +150,6 @@ function Auth() {
             id="email"
             onChange={(e) => {
               setEmail(e.target.value);
-              console.log(email);
             }}
           />
           <label htmlFor="password">Password</label>
@@ -160,7 +159,6 @@ function Auth() {
             id="password"
             onChange={(e) => {
               setPassword(e.target.value);
-              console.log(password);
             }}
           />
           <button type="submit">
