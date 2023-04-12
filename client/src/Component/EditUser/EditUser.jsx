@@ -116,11 +116,11 @@ function EditUser() {
                 setName(e.target.value)
             }} />
             <div className={styles.label}>Old password:</div>
-            <input type="text" value={oldPass} onChange={(e)=>{
+            <input type="password" value={oldPass} onChange={(e)=>{
                 setOldPass(e.target.value)
             }} />
             <div className={styles.label}>New password:</div>
-            <input type="text" value={newPass} onChange={(e)=>{
+            <input type="password" value={newPass} onChange={(e)=>{
                 setNewPass(e.target.value)
             }} />
         </div>
